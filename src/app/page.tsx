@@ -8,20 +8,15 @@ import PostItem from "./components/posts/PostItem";
 
 export default function Home() {
   return (
-    <LayoutDefault>
-      <div className=" flex gap-[60px]">
-        <div className="flex flex-col gap-[25px] w-[70%]">
-          <PostItem />
-          <PostItem />
-          <PostItem />
-        </div>
-        <div className="w-[30%]">
-          <LastestPost />
-        </div>
+    <div className=" flex gap-[60px]">
+      <div className="flex flex-col gap-[25px] w-[70%]">
+        <PostItem />
+        <PostItem />
+        <PostItem />
       </div>
-      <PostDetail />
-
-      <Author />
-    </LayoutDefault>
+      <div className="w-[30%]">
+        <LastestPost />
+      </div>
+    </div>
   );
 }

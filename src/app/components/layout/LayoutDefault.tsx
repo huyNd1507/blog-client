@@ -6,7 +6,9 @@ const LayoutDefault = ({ children }: Props) => {
   return (
     <div>
       <HeaderDefault />
-      <div className="bg-main px-[10%] py-[30px] h-[1000vh] ">{children}</div>
+      <div className="bg-main px-[10%] py-[30px] min-h-[100vh] ">
+        {children}
+      </div>
     </div>
   );
 };

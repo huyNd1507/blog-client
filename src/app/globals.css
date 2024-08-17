@@ -11,3 +11,15 @@
 li {
   cursor: pointer;
 }
+
+.menu li:hover > .submenu {
+  display: block;
+}
+
+.menu .submenu {
+  display: none;
+}
+
+.menu li:hover > .submenu {
+  display: block;
+}

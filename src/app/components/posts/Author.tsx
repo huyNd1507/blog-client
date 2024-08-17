@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Author = () => {
   return (
-    <div className="flex gap-[10px] p-[20px] border-[2px] rounded-[10px] border-[#fff]">
+    <div className="flex gap-[10px] p-[20px] border-[2px] rounded-[10px] mt-[20px] border-[#fff]">
       <Image
         src={User}
         width={255}
