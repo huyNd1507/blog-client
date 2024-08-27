@@ -3,6 +3,7 @@ import CommentIcon from "@/app/components/icon/Comment";
 import LikeIcon from "@/app/components/icon/Like";
 import ShareIcon from "@/app/components/icon/Share";
 import Author from "@/app/components/posts/Author";
+import { Post } from "@/app/type";
 
 interface Props {
   params: {
