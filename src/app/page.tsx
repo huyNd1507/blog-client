@@ -1,18 +1,13 @@
 "use client";
 
-import LayoutDefault from "./components/layout/LayoutDefault";
-import Author from "./components/posts/Author";
 import LastestPost from "./components/posts/LatestPost";
-import PostDetail from "./components/posts/PostDetail";
-import PostItem from "./components/posts/PostItem";
+import ListPost from "./components/posts/ListPost/page";
 
 export default function Home() {
   return (
     <div className=" flex gap-[60px]">
       <div className="flex flex-col gap-[25px] w-[70%]">
-        <PostItem />
-        <PostItem />
-        <PostItem />
+        <ListPost />
       </div>
       <div className="w-[30%]">
         <LastestPost />

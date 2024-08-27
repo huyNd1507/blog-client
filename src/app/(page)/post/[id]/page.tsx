@@ -1,20 +1,25 @@
+import { getPostById } from "@/app/api/post.api";
 import CommentIcon from "@/app/components/icon/Comment";
 import LikeIcon from "@/app/components/icon/Like";
 import ShareIcon from "@/app/components/icon/Share";
 import Author from "@/app/components/posts/Author";
 
-const DetailPost = () => {
-  //   const { slug } = useParams<{ slug: string }>();
-  //   const { data, error } = useQuery(["post", slug], () => getPost(slug));
+interface Props {
+  params: {
+    id: string;
+  };
+}
 
-  //   if (error) return <div>Error: {error.message}</div>;
-  //   if (!data) return <div>Loading...</div>;
+const DetailPost = async ({ params }: Props) => {
+  const { id } = params;
+  const response = await getPostById(id);
+  const post: Post = response.data.data;
 
   return (
     <>
       <div className="bg-white rounded-[15px] p-[25px]">
         <h1 className="text-[30px] font-semibold py-[15px] mb-[5px]">
-          Bố Già - Khí Chất Của Những Người Đàn Ông Xuất Chúng
+          {post?.title}
         </h1>
         <p className="underline">
           Tác giả: Nguyễn Thị Bích Thủy - Ngày 14 Tháng 8 Năm2024
